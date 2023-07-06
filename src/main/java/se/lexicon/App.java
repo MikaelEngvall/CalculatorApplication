@@ -32,13 +32,8 @@ public class App {
                     System.out.println("Result: " + (num1 * num2));
                     break;
                 case "/":
-                    if (num2 != 0) {
-                        System.out.println("Result: " + (num1 / num2));
-                        break;
-                    } else {
-                        System.out.println("Division by 0 is impossible!");
-                        break;
-                    }
+                    System.out.println((num2 == 0) ? "Division by 0 is impossible!": "Result: " + (num1 / num2));
+                    break;
                 default:
                     System.out.println("Invalid operator!");
             }
