@@ -53,7 +53,7 @@ public class App {
             if (System.getProperty("os.name").contains("Windows"))
                 new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
             else
-                Runtime.getRuntime().exec("clear");
+                Runtime.getRuntime().exec("clear");  // Linux
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
