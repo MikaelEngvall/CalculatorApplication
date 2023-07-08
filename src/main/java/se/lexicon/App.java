@@ -47,7 +47,12 @@ public class App {
 
     }
 
-    // Method to clear the screen
+    /* Method to clear the screen
+    This is really not as easy as in C.
+    In java you must create a methode to do that, there are no commands for clearing the screen.
+    I went down that rabbit hole and found a solution.
+    The clearScreen uses javaio.IOException
+     */
     private static void clearScreen() {
         try {
             if (System.getProperty("os.name").contains("Windows"))
